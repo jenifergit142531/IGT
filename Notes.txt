@@ -57,3 +57,5 @@ internal class Employee
 
     dotnet ef migration add 'EmployeeMigration'
     dotnet ef database update
+
+    Step 5 : Create the CRUD 

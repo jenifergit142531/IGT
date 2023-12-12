@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<BookStore>
+  <Book Id="100">
+    <Title>Ikigai</Title>
+    <Author>paul</Author>
+  </Book>
+  <Book Id="200">
+    <Title>Inferno</Title>
+    <Author>dan brown</Author>
+  </Book>
+</BookStore>
