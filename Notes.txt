@@ -1,0 +1,59 @@
+Agenda:
+
+- Working with database
+
+* Database first approach
+* Code first approch 
+
+- Working with XML , XSD
+
+- Introduction to MVC 
+
+DBFirst Approach :
+
+- create db tables
+- Scaffold the tables to classess
+- CRUD - Create,read,update,delete
+
+Code First Approach :
+
+- Create the data model - class 
+- Migrate the classes to the database table 
+- CRUD operations 
+
+Steps :
+
+step 1 => Install the package dependencies
+
+dotnet add package 
+
+entityframework
+entityframework.sqlserver
+entityframework.tools
+
+Step 2 : Create your data model
+
+internal class Employee
+    {
+        [Key]
+        public Guid Eid { get; set; } = new Guid();
+        public string EmployeeName { get; set; }
+        public string Role { get; set; }
+
+    }
+
+    Step 3 : configure the data source
+
+    dbcontext : establish the session / connection to your database
+    dbset : data tables
+
+    Step 4 : Migrate the class
+
+    add-migration 'EmployeeMigration'
+    update-database
+
+
+    vs code :
+
+    dotnet ef migration add 'EmployeeMigration'
+    dotnet ef database update

@@ -6,6 +6,8 @@ using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 
+
+//C:\Users\JeniferY\Desktop\iinterchange\Console\DbFIirst\DbFIirst\DbFIirst.csproj
 namespace DbFIirst
 {
     internal class PropertyPropShop
