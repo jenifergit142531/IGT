@@ -3,9 +3,11 @@
   <Book Id="100">
     <Title>Ikigai</Title>
     <Author>paul</Author>
+    <Price>150</Price>
   </Book>
   <Book Id="200">
     <Title>Inferno</Title>
     <Author>dan brown</Author>
+    <Price>29</Price>
   </Book>
 </BookStore>

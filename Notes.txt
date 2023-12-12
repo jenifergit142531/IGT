@@ -59,3 +59,40 @@ internal class Employee
     dotnet ef database update
 
     Step 5 : Create the CRUD 
+
+    Working with XML & XSD :
+
+HTML : Hyper text markup language
+
+markup - tag structure 
+
+<html>
+<head>
+<title>welcome</title>
+</head>
+<body>
+<p>
+<div>
+</body>
+<html>
+
+XML - Extensible markup language
+
+purpose :
+
+- designed to store and transport data
+- human readable format
+- Hierarchial structure 
+- self descriptive 
+
+<bootstore>
+<book>
+<title> </title>
+<author> </author>
+</book>
+</bookstore>
+
+XSD : - XML Schema Definition
+
+- define the structure of the elements and attributes in an xml document
+- Set of rules to validate the structure and content of the xml file
