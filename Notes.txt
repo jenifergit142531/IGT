@@ -1,0 +1,25 @@
+
+
+
+Agenda :
+
+- Introduction to web in .Net
+- Web application
+- Introduction to Asp.net Core MVC
+- MVC Design pattern
+- Request Lifecycle of aspmvc
+- Working with controllers , Models , Views
+- Routing 
+- Middleware
+- Building a web app
+
+Introduction to web :
+
+- Console application : cli / terminal
+- Windows application : Desktop application
+- Web form - web application (3 - tier architecture )
+* Presentation layer
+* Business logic layer
+* Database layer
+- Asp.net MVC - Web application 
+* Seperation of concerns 
