@@ -1,3 +1,6 @@
+using System.Diagnostics;
+using NuGet.Common;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -16,9 +19,19 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+app.Use(async (context,next) =>
+{
+    Console.WriteLine($"Request :{context.Request.Method} {context.Request.Path}");
+    await next.Invoke();
+    Console.WriteLine($"Response :{context.Response.StatusCode}");
+
+});
+
 app.UseRouting();
 
 app.UseAuthorization();
+
+
 
 /*app.UseEndpoints(Endpoint=>
 {
@@ -29,8 +42,8 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-    app.MapControllerRoute(
+   /* app.MapControllerRoute(
     name: "Fera",
-    pattern: "{controller=Property}/{action=Welcome}/{id?}");
+    pattern: "{controller=Property}/{action=Welcome}/{id?}");*/
 
 app.Run();

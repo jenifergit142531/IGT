@@ -93,5 +93,25 @@ Model Binding :
 Interacts with controller to process the http Request
 
 
+Middleware :
+
+- Software component that participates in processing the HTTP Requests & Response
+
+- Request / response pipeline is handled by Middleware
+
+- Sequence of actions involved in the pipeline
+
+Commonly used Middlewares:
+
+- Authentication Middleware
+- Authorization Middleware
+- Routing
+- Static files
+- Error Handling
+- CORS => WEBAPI
+- Custom middleware
+
+
+
 
 
