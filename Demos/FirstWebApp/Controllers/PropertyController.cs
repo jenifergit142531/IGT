@@ -2,11 +2,14 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MyApp.Namespace
 {
+
+[Route("Prop")]
     public class PropertyController : Controller
     {
         // GET: PropertyController
       
 
+        [Route("Fera")]
         public string Welcome()
         {
             return "Welcome to Fera Homes";

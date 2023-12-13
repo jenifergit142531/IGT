@@ -223,3 +223,4 @@ C:\Users\jenifery\aspmvc\demos\firstwebapp\bin\Debug\net8.0\runtimes\win\lib\net
 C:\Users\jenifery\aspmvc\demos\firstwebapp\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\jenifery\aspmvc\demos\firstwebapp\obj\Debug\net8.0\FirstWebApp.csproj.AssemblyReference.cache
 C:\Users\jenifery\aspmvc\demos\firstwebapp\obj\Debug\net8.0\FirstWebApp.csproj.CopyComplete
+C:\Users\jenifery\aspmvc\demos\firstwebapp\obj\Debug\net8.0\FirstWebApp.sourcelink.json

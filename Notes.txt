@@ -8,8 +8,24 @@ Agenda :
 - Introduction to Asp.net Core MVC
 - MVC Design pattern
 - Request Lifecycle of aspmvc
-- Working with controllers , Models , Views
+
+- Working with controllers  
+* Creating controller
+* Action Selectors :
+1.Action name
+2.Non Action name
+3.Action Verbs
+* Action Results
+
 - Routing 
+* Conventional Routing
+* Attribute Routing
+
+- Working with Models 
+* Data Models
+* Model Validation
+* Model Binding
+
 - Middleware
 - Building a web app
 
@@ -23,3 +39,32 @@ Introduction to web :
 * Database layer
 - Asp.net MVC - Web application 
 * Seperation of concerns 
+
+
+Create controller :
+
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+dotnet tool install -g dotnet-aspnet-codegenerator
+dotnet aspnet-codegenerator controller -name PropertyController --relativeFolderPath Controllers
+
+
+Routing :
+
+Navigating from one page to another page
+
+Types :
+
+1.Conventional Routing
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+    app.MapControllerRoute(
+    name: "Fera",
+    pattern: "{controller=Property}/{action=Website}/{id?}");
+
+2. Attribute Routing
+
+[Route("routename")]
+
