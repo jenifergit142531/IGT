@@ -7,14 +7,18 @@ namespace MyApp.Namespace
     public class PropertyController : Controller
     {
         // GET: PropertyController
-      
+      public IActionResult Index()
+    {
+        return View();
+    }
 
         [Route("Fera")]
         public string Welcome()
         {
             return "Welcome to Fera Homes";
         }
-
+        
+        [Route("webpage")]
         public RedirectResult Website()
         {
         return Redirect("https://www.feraluxe.com");
