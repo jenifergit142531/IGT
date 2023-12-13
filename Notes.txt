@@ -27,7 +27,7 @@ Agenda :
 * Model Binding
 
 - Middleware
-- Building a web app
+
 
 Introduction to web :
 
@@ -82,6 +82,16 @@ Model Validation :
 * Range
 * Email address
 * String length 
+
+Generate views :(with models)
+
+dotnet aspnet-codegenerator view Validation Create -m Property -outDir Views/Property --useDefaultLayout --referenceScriptLibraries
+
+
+Model Binding : 
+
+Interacts with controller to process the http Request
+
 
 
 
