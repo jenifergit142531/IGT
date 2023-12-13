@@ -3,14 +3,34 @@ using Microsoft.AspNetCore.Mvc;
 namespace MyApp.Namespace
 {
 
-[Route("Prop")]
+//[Route("Prop")]
     public class PropertyController : Controller
     {
         // GET: PropertyController
-      public IActionResult Index()
+    
+
+
+    
+
+    [HttpGet]
+    public IActionResult Validation()
     {
         return View();
     }
+
+    [HttpPost]
+    public IActionResult Validation(Property p)
+    {
+        if(ModelState.IsValid)
+        {
+            return Content("You have successfully posted your property");
+        }
+        else
+        {
+            return Content ("Something went wrong...Try again!!!");
+        }
+    }
+
 
         [Route("Fera")]
         public string Welcome()

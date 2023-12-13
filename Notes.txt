@@ -68,3 +68,20 @@ app.MapControllerRoute(
 
 [Route("routename")]
 
+
+Models :
+
+- Create the properties 
+
+
+Model Validation :
+
+- Data annotations
+
+* Required 
+* Range
+* Email address
+* String length 
+
+
+

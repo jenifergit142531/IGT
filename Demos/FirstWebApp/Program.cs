@@ -20,17 +20,17 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.UseEndpoints(Endpoint=>
+/*app.UseEndpoints(Endpoint=>
 {
     Endpoint.MapControllers();
-});
+});*/
 
-/*app.MapControllerRoute(
+app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
     app.MapControllerRoute(
     name: "Fera",
-    pattern: "{controller=Property}/{action=Website}/{id?}");
-*/
+    pattern: "{controller=Property}/{action=Welcome}/{id?}");
+
 app.Run();
